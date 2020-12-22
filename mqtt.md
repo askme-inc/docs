@@ -2,32 +2,35 @@
 
 ## 修改记录
 
-- `2020-12-22`：MQTT 协议第一版
+- `2020-12-22#1`：重构 tenant topic 
+- `2020-12-22#0`：MQTT 协议第一版
 
 ## 消息
 
 | topic         | 说明 |
 |---------------|----|
-| info/heart    | 心跳 |
-| info/position | 位置 |
-| info/up       | 上线 |
-| info/down     | 遗嘱 |
-| info/alarm    | 报警 |
+| info/heart, info/$tenantId/heart       | 心跳 |
+| info/position, info/$tenantId/position | 位置 |
+| info/up, info/$tenantId/up             | 上线 |
+| info/down, info/$tenantId/down         | 遗嘱 |
+| info/alarm, info/$tenantId/alarm       | 报警 |
 
-### info/heart
+### info/heart, info/$tenantId/heart
 
 ```json
 {
   "user_id": 1,
+  "tenant_id": 1,
   "timestamp": 1608618462,
   "battery": 80,
+  "battery_charging": false,
   "mode": "NORMAL",
   "network": "4G",
   "ip": "192.168.1.1"
 }
 ```
 
-### info/position
+### info/position, info/$tenantId/position
 
 ```json
 {
@@ -42,7 +45,7 @@
 }
 ```
 
-### info/up
+### info/up, info/$tenantId/up
 
 ```json
 {
@@ -54,7 +57,7 @@
 }
 ```
 
-### info/down
+### info/down, info/$tenantId/down
 
 ```json
 {
@@ -63,7 +66,7 @@
 }
 ```
 
-### info/alarm
+### info/alarm, info/$tenantId/alarm
 
 ```json
 {
