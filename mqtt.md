@@ -2,6 +2,7 @@
 
 ## 修改记录
 
+- `2020-12-22#2`：去除心跳包 ip
 - `2020-12-22#1`：重构 tenant topic 
 - `2020-12-22#0`：MQTT 协议第一版
 
@@ -25,8 +26,7 @@
   "battery": 80,
   "battery_charging": false,
   "mode": "NORMAL",
-  "network": "4G",
-  "ip": "192.168.1.1"
+  "network": "4G"
 }
 ```
 
