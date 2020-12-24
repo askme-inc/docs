@@ -2,6 +2,7 @@
 
 ## 修改记录
 
+- `2020-12-24#0`: 心跳包增加版本号
 - `2020-12-23#0`: up 信息新增字段
 - `2020-12-22#2`: 去除心跳包 ip
 - `2020-12-22#1`: 重构 tenant topic 
@@ -27,7 +28,8 @@
   "battery": 80,
   "battery_charging": false,
   "mode": "NORMAL",
-  "network": "4G"
+  "network": "4G",
+  "version": "1.0"
 }
 ```
 
