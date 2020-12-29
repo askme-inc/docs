@@ -105,8 +105,11 @@
 `alarm` 字段枚举：
 
 - `sos`: 下行
-- `fence:in`: 围栏限入
-- `fence:out`: 围栏限出
+- `fence`: 围栏触发
+- `battery`: 电量低
+- `unwear`: 未佩戴
+- `field`: 近电
+- `fall`: 摔倒
 
 ### op/command/cap/$id
 
